@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: alpha-reposi           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: alpha-repo           # set this to your Amazon ECR repository name
   ECS_SERVICE: alpha-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: alpha_cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: alpha-task-revision1.json # set this to the path to your Amazon ECS task definition
