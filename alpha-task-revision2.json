@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:401575532556:task-definition/alpha-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:401575532556:task-definition/alpha-task:2",
     "containerDefinitions": [
         {
             "name": "first-container",
-            "image": "public.ecr.aws/d5g7v6m6/alpha-repo",
+            "image": "public.ecr.aws/d5g7v6m6/alpha-repo:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -34,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::401575532556:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::401575532556:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -74,7 +74,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-03T02:21:55.478Z",
+    "registeredAt": "2023-02-03T03:17:36.200Z",
     "registeredBy": "arn:aws:iam::401575532556:root",
     "tags": [
         {
