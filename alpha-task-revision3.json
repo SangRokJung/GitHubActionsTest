@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:401575532556:task-definition/alpha-task:2",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:401575532556:task-definition/alpha-task:3",
     "containerDefinitions": [
         {
             "name": "first-container",
-            "image": "public.ecr.aws/d5g7v6m6/alpha-repo:latest",
+            "image": "401575532556.dkr.ecr.ap-northeast-2.amazonaws.com/alpha-repo",
             "cpu": 0,
             "portMappings": [
                 {
@@ -34,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::401575532556:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::401575532556:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -45,10 +45,16 @@
             "name": "ecs.capability.execution-role-awslogs"
         },
         {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
             "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
@@ -74,7 +80,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-03T03:17:36.200Z",
+    "registeredAt": "2023-02-03T05:55:42.075Z",
     "registeredBy": "arn:aws:iam::401575532556:root",
     "tags": [
         {
